@@ -3,10 +3,10 @@ import { Box, Flex } from 'herm';
 import Header from './Header';
 import Sidebar from './Sidebar';
 import Main from './Main';
-function Layout({ children }) {
+function Layout({ children, me }) {
   return (
     <Box>
-      <Header></Header>
+      <Header me={me}></Header>
       <Flex>
         <Sidebar></Sidebar>
         <Main>{children}</Main>
